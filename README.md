@@ -15,12 +15,11 @@ In this example, we'll be using:
 * kibana: connecting to facetflow w/ user authentication option
 * nginx: reverse proxying http & authenticating logstash to facetflow using HTTPS
 
-![FacetFlow](https://facetflow.com/Assets/Theme/img/logo.png)
 Note: A free or paid account at Facetflow is required.
 
 
 
-## Installation
+## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) Installation
 ### nProbe Setup
 ```
 lsb=$(lsb_release -r | awk '{print $2}');
@@ -57,7 +56,7 @@ Edit the elasticsearch parameter in /usr/share/nginx/kibana/config.js:
 
 ----------------
 
-## Configuration
+## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) Configuration
 ### FacetFlow
 Sign up for a free account/package at FacetFlow.com and get your API_KEY
 
@@ -120,7 +119,7 @@ server {
 ----------------
 
 
-## Start the Engines
+## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) Start the Engines
 ### Nginx
 ```service nginx start```
 
