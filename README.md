@@ -1,9 +1,9 @@
+![ntop](http://www.ntop.org/wp-content/uploads/2011/08/logo_new_m.png)
+
 nprobe-facetflow
 ================
 
 nProbe Integration with FacetFlow Hosted ES ("nELK")
-
-![ntop](http://www.ntop.org/wp-content/uploads/2011/08/logo_new_m.png)
 
 
 #Quick Ubuntu Setup:
