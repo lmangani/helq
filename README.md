@@ -3,6 +3,9 @@ nprobe-facetflow
 
 nProbe Integration with FacetFlow Hosted ES ("nELK")
 
+![ntop](http://www.ntop.org/wp-content/uploads/2011/08/logo_new_m.png)
+
+![FacetFlow](https://facetflow.com/Assets/Theme/img/logo.png)
 
 #Quick Ubuntu Setup:
 
@@ -132,3 +135,5 @@ $ nprobe -T "%IPV4_SRC_ADDR %L4_SRC_PORT %IPV4_DST_ADDR %L4_DST_PORT %PROTOCOL %
 ----------------
 
 That's all - your nProbe metrics should appear in your FacetFlow-powered "nELK" stack
+
+For more information about nProbe visit: http://www.ntop.org/products/nprobe/
