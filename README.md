@@ -119,7 +119,7 @@ server {
 ----------------
 
 
-## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) Start the Engines
+## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) Start your Engines!
 ### Nginx
 ```service nginx start```
 
@@ -133,6 +133,10 @@ $ nprobe -T "%IPV4_SRC_ADDR %L4_SRC_PORT %IPV4_DST_ADDR %L4_DST_PORT %PROTOCOL %
 
 ----------------
 
-That's all - your nProbe metrics should appear in your FacetFlow-powered "nELK" stack
+That's all! Your nProbe template metrics should appear in your FacetFlow-powered "nELK" stack
+
+![](http://www.nuxeo.com/blog/wp-content/uploads/2014/04/kibana-300x132.png)
+
+You can import our nProbe Template dashboards to quick start or model your own.
 
 For more information about nProbe visit: http://www.ntop.org/products/nprobe/
