@@ -5,7 +5,6 @@ nProbe Integration with FacetFlow Hosted ES ("nELK")
 
 ![ntop](http://www.ntop.org/wp-content/uploads/2011/08/logo_new_m.png)
 
-![FacetFlow](https://facetflow.com/Assets/Theme/img/logo.png)
 
 #Quick Ubuntu Setup:
 
@@ -16,6 +15,7 @@ In this example, we'll be using:
 * kibana: connecting to facetflow w/ user authentication option
 * nginx: reverse proxying http & authenticating logstash to facetflow using HTTPS
 
+![FacetFlow](https://facetflow.com/Assets/Theme/img/logo.png)
 Note: A free or paid account at Facetflow is required.
 
 
