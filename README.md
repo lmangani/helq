@@ -15,7 +15,7 @@ In this example, we'll be using:
 * kibana: connecting to facetflow w/ user authentication option
 * nginx: reverse proxying http & authenticating logstash to facetflow using HTTPS
 
-Note: A free or paid account at Facetflow is required.
+Note: A free or paid account at [Facetflow](https://facetflow.com/) is required.
 
 
 
