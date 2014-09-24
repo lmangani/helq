@@ -140,3 +140,24 @@ That's all! Your nProbe template metrics should appear in your FacetFlow-powered
 You can import our nProbe Template dashboards to quick start or model your own.
 
 For more information about nProbe visit: http://www.ntop.org/products/nprobe/
+
+
+-------------------------
+
+### Quick Tips
+
+
+* Send a test entry locally:
+```
+$ curl -u {YOUR_API_KEY}: \
+       -XPOST 'http://127.0.0.1:19200/my_index/posts' -d '{
+    "user": "myself",
+    "post_date": "2014-09-24T09:48:41.328Z",
+    "message": "trying out facetflow and nprobe"
+  }'
+```
+
+* Drop your indexes in sandbox mode:
+```
+curl -XDELETE 'http://127.0.0.1:19200/my_index/' -u {API_KEY}
+```
