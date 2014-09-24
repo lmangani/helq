@@ -52,7 +52,7 @@ cp -r kibana/src/* /usr/share/nginx/kibana/
 ```
 Edit the elasticsearch parameter in /usr/share/nginx/kibana/config.js:
 ```
- elasticsearch: { server: "{YOUR_ID}.facetflow.io", withCredentials: true }
+ elasticsearch: { server: "https://{YOUR_ID}.facetflow.io", withCredentials: true }
 ```
 
 ----------------
