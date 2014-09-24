@@ -58,7 +58,7 @@ Edit the elasticsearch parameter in /usr/share/nginx/kibana/config.js:
 
 ## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) Configuration
 ### FacetFlow
-Sign up for a free account/package at FacetFlow.com and get your API_KEY
+Sign up for a free account/package at FacetFlow.com and get your API_KEY and host ID
 
 
 
