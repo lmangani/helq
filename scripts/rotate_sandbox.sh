@@ -14,8 +14,9 @@ ES_HOST='http://localhost:19200'
 # Document Limit per index being checked
 LIMIT=4500
 
-# For Sandbox only, chop without mercy
-INDEXS=$(date +%Y.%m.*)
+# For Sandbox only, chop all Logstash indexes without mercy or use date ranger
+INDEXS='*'
+# INDEXS=$(date +%Y.%m.*)
 
 # Count documents in index
 COUNT=$(curl -XGET "$ES_HOST/logstash-$INDEXS/_count" -u $API_KEY: -d '{"query": {"match_all": {} } }' -s | sed 's,.*count":\([^<]*\)}.*,\1,g' )
