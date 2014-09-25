@@ -161,3 +161,8 @@ $ curl -u {YOUR_API_KEY}: \
 ```
 curl -XDELETE 'http://127.0.0.1:19200/my_index/' -u {API_KEY}
 ```
+
+* Count & Rotate Logstash indexes in your limited sandbox from CRON (scripts/)
+```curl -XGET "http://localhost:19200/logstash-*/_count" -u {YOUR_API_KEY}: -d '{"query": {"match_all": {} } }' -s```
+
+```curl -XDELETE "http://localhost:19200/logstash-*/" -u {YOUR_API_KEY}:```
