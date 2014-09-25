@@ -6,7 +6,7 @@ nprobe-facetflow
 nProbe Integration with FacetFlow Hosted ES ("nELK")
 
 
-#Quick Ubuntu Setup:
+## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) Quick Ubuntu Setup:
 
 In this example, we'll be using:
 
