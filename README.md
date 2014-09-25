@@ -133,7 +133,9 @@ $ nprobe -T "%IPV4_SRC_ADDR %L4_SRC_PORT %IPV4_DST_ADDR %L4_DST_PORT %PROTOCOL %
 
 ----------------
 
-That's all! Your nProbe template metrics should appear in your FacetFlow-powered "nELK" stack
+## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) You're Done! 
+
+Your nProbe template metrics should now appear in your FacetFlow-powered "nELK" stack.
 
 ![](http://www.nuxeo.com/blog/wp-content/uploads/2014/04/kibana-300x132.png)
 
@@ -145,7 +147,6 @@ For more information about nProbe visit: http://www.ntop.org/products/nprobe/
 -------------------------
 
 ### Quick Tips
-
 
 * Send a test entry locally:
 ```
@@ -170,3 +171,6 @@ curl -XGET "http://localhost:19200/logstash-*/_count" -u {YOUR_API_KEY}: -d '{"q
 ```
 curl -XDELETE "http://localhost:19200/logstash-*/" -u {YOUR_API_KEY}:
 ```
+
+* If you're parsing syslog lines too, make sure your hosts are time/ntp sycronized
+
