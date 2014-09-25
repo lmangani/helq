@@ -1,23 +1,30 @@
 #!/bin/bash
-# Dumb Cron helper to Drop/Rotate data in ES sandbox
+# Hyper Dumb Cron helper to Drop/Rotate data in ES sandbox @facetflow
+# If you need something smart, secure and reliable, please use the official helper scripts from ES
 
-# MANDATORY: Facetflow API Key
+# m h  dom mon dow   command
+# */5 * * * * /opt/rotate_stash.sh
+
+# MANDATORY: Your Facetflow API Key
 API_KEY=""
 
-# Use local https proxy or actual url
+# Use local nginx https proxy or actual ES url
 ES_HOST='http://localhost:19200'
+
 # Document Limit per index being checked
-LIMIT=4000
-TODAY=$(date +%Y.%m.%d)
+LIMIT=4500
+
+# For Sandbox only, chop without mercy
+INDEXS=$(date +%Y.%m.*)
 
 # Count documents in index
-COUNT=$(curl -XGET "$ES_HOST/logstash-$TODAY/_count" -u $API_KEY: -d '{"query": {"match_all": {} } }' -s | sed 's,.*count":\([^<]*\)}.*,\1,g' )
+COUNT=$(curl -XGET "$ES_HOST/logstash-$INDEXS/_count" -u $API_KEY: -d '{"query": {"match_all": {} } }' -s | sed 's,.*count":\([^<]*\)}.*,\1,g' )
 echo "Current index count is: $COUNT"
 
 # Remove if count is higher than $LIMIT
 if [ "$COUNT" -gt "$LIMIT" ]; then
-	echo "Deleting logstash-$TODAY"
-	curl -XDELETE "$ES_HOST/logstash-$TODAY/" -u $API_KEY:
+	echo "Deleting logstash-$INDEXS"
+	curl -XDELETE "$ES_HOST/logstash-$INDEXS/" -u $API_KEY:
 	echo
 	exit 1;
 fi
