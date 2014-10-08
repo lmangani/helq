@@ -12,7 +12,7 @@ In this example, we'll be using:
 
 * nprobe: capturing and sending json reports to Logstash on port 5656
 * logstash: receiving json logs and forwarding to to local nginx on port 19200
-* kibana: connecting to facetflow w/ user authentication option
+* qbana: connecting to facetflow w/ user authentication option
 * nginx: reverse proxying http & authenticating logstash to facetflow using HTTPS
 
 Note: A free or paid account at [Facetflow](https://facetflow.com/) is required.
@@ -47,10 +47,10 @@ apt-get install nginx
 ```
 cd /usr/src
 git clone https://github.com/QXIP/Qbana
-mkdir /usr/share/nginx/kibana
-cp -r Qbana/src/* /usr/share/nginx/kibana/
+mkdir /usr/share/nginx/qbana
+cp -r Qbana/src/* /usr/share/nginx/qbana/
 ```
-Edit the elasticsearch parameter in /usr/share/nginx/kibana/config.js:
+Edit the elasticsearch parameter in /usr/share/nginx/qbana/config.js:
 ```
  elasticsearch: { server: "https://{YOUR_ID}.facetflow.io", withCredentials: true }
 ```
