@@ -42,13 +42,13 @@ apt-get install nginx
 
 ```
 
-### Kibana Setup
+### Kibana/Qbana Setup
 
 ```
 cd /usr/src
-git clone https://github.com/elasticsearch/kibana
+git clone https://github.com/QXIP/Qbana
 mkdir /usr/share/nginx/kibana
-cp -r kibana/src/* /usr/share/nginx/kibana/
+cp -r Qbana/src/* /usr/share/nginx/kibana/
 ```
 Edit the elasticsearch parameter in /usr/share/nginx/kibana/config.js:
 ```
@@ -135,7 +135,7 @@ $ nprobe -T "%IPV4_SRC_ADDR %L4_SRC_PORT %IPV4_DST_ADDR %L4_DST_PORT %PROTOCOL %
 
 ## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) You're Done! 
 
-Your nProbe template metrics should now appear in your FacetFlow-powered "nELK" stack.
+Your nProbe template metrics should now appear in your FacetFlow-powered "ELQ" stack.
 
 ![](http://www.nuxeo.com/blog/wp-content/uploads/2014/04/kibana-300x132.png)
 
