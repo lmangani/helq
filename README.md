@@ -1,4 +1,4 @@
-![http://ntop.org](http://www.ntop.org/wp-content/uploads/2011/08/logo_new_m.png)
+<a href="http://qxip.net" target="_blank"><img src="http://www.sipcapture.org/data/images/qxip.png"></a> <a href="http://ntop.org" target="_blank"><img src="http://www.ntop.org/wp-content/uploads/2011/08/logo_new_m.png"></a>
 
 nprobe-facetflow
 ================
@@ -174,6 +174,8 @@ curl -XDELETE "http://localhost:19200/logstash-*/" -u {YOUR_API_KEY}:
 
 * If you're parsing syslog lines too, make sure your hosts are time/ntp sycronized
 
-
-![http://ntop.org](http://www.nmon.net/logo.png)
+------------
+This project sponsored by: 
+<br>
+<a href="http://qxip.net" target="_blank"><img src="http://www.sipcapture.org/data/images/qxip.png"></a> <a href="http://ntop.org" target="_blank"><img src="http://www.ntop.org/wp-content/uploads/2011/08/logo_new_m.png"></a> <a href="http://facetflow.com" target="_blank"><img src="http://i.imgur.com/cIvYisr.png"></a>
 
