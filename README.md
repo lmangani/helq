@@ -42,7 +42,7 @@ apt-get install nginx
 
 ```
 
-### Kibana/Qbana Setup
+### Qbana Setup
 
 ```
 cd /usr/src
@@ -137,9 +137,9 @@ $ nprobe -T "%IPV4_SRC_ADDR %L4_SRC_PORT %IPV4_DST_ADDR %L4_DST_PORT %PROTOCOL %
 
 Your nProbe template metrics should now appear in your FacetFlow-powered "ELQ" stack.
 
-![](http://www.nuxeo.com/blog/wp-content/uploads/2014/04/kibana-300x132.png)
+![](http://i.imgur.com/9gXTKCd.png)
 
-You can import our nProbe Template dashboards to quick start or model your own.
+Qbana comes preloaded with nProbe dashboards. If you prefer Kibana, just import our nProbe Template dashboards to quick start or model your own. 
 
 For more information about nProbe visit: http://www.ntop.org/products/nprobe/
 
