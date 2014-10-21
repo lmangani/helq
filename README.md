@@ -3,7 +3,7 @@
 nprobe-facetflow
 ================
 
-nProbe Integration with FacetFlow Hosted ES ("nELK")
+nProbe Integration with FacetFlow - Hosted Elasticsearch-Logstash-Qbana ("HELQ")
 
 
 ## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) Quick Ubuntu Setup:
@@ -135,7 +135,7 @@ $ nprobe -T "%IPV4_SRC_ADDR %L4_SRC_PORT %IPV4_DST_ADDR %L4_DST_PORT %PROTOCOL %
 
 ## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) You're Done! 
 
-Your nProbe template metrics should now appear in your FacetFlow-powered "ELQ" stack.
+Your nProbe template metrics should now appear in your FacetFlow-powered "HELQ" stack.
 
 ![](http://i.imgur.com/9gXTKCd.png)
 
