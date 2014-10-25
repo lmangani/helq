@@ -64,8 +64,8 @@ apt-get install nginx
 
 ```
 ### FacetFlow Setup
+Sign up for a free or paid account/package at [FacetFlow.com](http://www.FacetFlow.com) and get your *{API_KEY}* and *{HOST_ID}*
 ```
-Sign up for a free or paid account/package at FacetFlow.com and get your {API_KEY} and {HOST_ID}
 The {API_KEY} will be used to authenticate both QBana users and Logstash output plugin.
 ```
 
