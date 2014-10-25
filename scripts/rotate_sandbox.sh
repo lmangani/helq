@@ -19,13 +19,13 @@ INDEXS='*'
 # INDEXS=$(date +%Y.%m.*)
 
 # Count documents in index
-COUNT=$(curl -XGET "$ES_HOST/logstash-$INDEXS/_count" -u $API_KEY: -d '{"query": {"match_all": {} } }' -s | sed 's,.*count":\([^<]*\)}.*,\1,g' )
-echo "Current index count is: $COUNT"
+COUNT=$(curl -XGET "$ES_HOST/nprobe-$INDEXS/_count" -u $API_KEY: -d '{"query": {"match_all": {} } }' -s | sed 's,.*count":\([^<]*\)}.*,\1,g' )
+echo "Current nProbe document count is: $COUNT"
 
 # Remove if count is higher than $LIMIT
 if [ "$COUNT" -gt "$LIMIT" ]; then
-	echo "Deleting logstash-$INDEXS"
-	curl -XDELETE "$ES_HOST/logstash-$INDEXS/" -u $API_KEY:
+	echo "Deleting nprobe-$INDEXS"
+	curl -XDELETE "$ES_HOST/nprobe-$INDEXS/" -u $API_KEY:
 	echo
 	exit 1;
 fi
