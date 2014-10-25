@@ -2,7 +2,7 @@
 
 H.E.L.Q.
 ================
-Hosted-Elasticsearch-Logstash-Qbana __("HELQ")__ using [Facetflow](https://facetflow.com/)
+Hosted-Elasticsearch-Logstash-Qbana __("HELQ")__ for [nProbe](www.ntop.org/products/nprobe/) using [Facetflow](https://facetflow.com/)
 
 <br><br>
 
