@@ -1,8 +1,7 @@
-<a href="http://ntop.org" target="_blank"><img src="http://www.ntop.org/wp-content/uploads/2011/08/logo_new_m.png"></a>
 
-H.E.L.Q.
+<img src="http://i.imgur.com/SjmuZS7.png" />
 ================
-Hosted-Elasticsearch-Logstash-Qbana __("HELQ")__ for [nProbe](www.ntop.org/products/nprobe/) using [Facetflow](https://facetflow.com/)
+Hosted-Elasticsearch-Logstash-Qbana *("HELQ")* for [nProbe v7](www.ntop.org/products/nprobe/) using [Facetflow](https://facetflow.com/)
 
 <br>
 
