@@ -5,6 +5,7 @@ nprobe-facetflow
 
 Hosted-Elasticsearch-Logstash-Qbana __("HELQ")__ using [Facetflow](https://facetflow.com/) ES Clusters
 
+<br><br>
 
 ## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) Quick Ubuntu/Debian Setup:
 
@@ -17,7 +18,7 @@ In this example, we'll be using:
 
 Note: A free or paid account at [Facetflow](https://facetflow.com/) is required.
 
-
+<br>
 
 ## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) Installation
 ### nProbe Setup
@@ -86,6 +87,8 @@ Edit the elasticsearch parameter in /usr/share/nginx/qbana/config.js:
 
 ----------------
 
+<br>
+
 ## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) Configuration
 
 ### nginx
@@ -146,6 +149,7 @@ output {
 
 ----------------
 
+<br>
 
 ## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) Start your Engines!
 ### Nginx (Qbana + Logstash Forwarder)
@@ -172,7 +176,7 @@ Qbana comes preloaded with nProbe optimized dashboards. If you prefer using vani
 For more information about nProbe visit: http://www.ntop.org/products/nprobe/
 
 
-
+<br>
 
 -------------------------
 
@@ -207,6 +211,7 @@ curl -XDELETE "http://localhost:19200/nprobe-*/" -u {YOUR_API_KEY}:
 * When using several nProbe instances/plugins, create new entry points with custom "_type" in Logstash
 
 ------------
+<br>
 
 This project sponsored by: 
 <br>
