@@ -140,13 +140,15 @@ $ nprobe -T "%IPV4_SRC_ADDR %L4_SRC_PORT %IPV4_DST_ADDR %L4_DST_PORT %PROTOCOL %
 
 ## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) You're Done! 
 
-Your nProbe template metrics should now appear in your FacetFlow-powered "HELQ" stack.
+nProbe template metrics should now appear in QBana - you are ready to *HELQ Yourself!*
 
 ![](http://i.imgur.com/9gXTKCd.png)
 
-Qbana comes preloaded with nProbe dashboards. If you prefer Kibana, just import our nProbe Template dashboards to quick start or model your own. 
+Qbana comes preloaded with nProbe optimized dashboards. If you prefer using vanilla Kibana you absolutely can, just import our nProbe Template dashboards as starters or model your own. 
 
 For more information about nProbe visit: http://www.ntop.org/products/nprobe/
+
+
 
 
 -------------------------
