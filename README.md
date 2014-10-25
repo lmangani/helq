@@ -215,6 +215,6 @@ curl -XDELETE "http://localhost:19200/nprobe-*/" -u {YOUR_API_KEY}:
 <br>
 
 This project sponsored by: 
-<br>
+<br><br><center>
 <a href="http://qxip.net" target="_blank"><img src="http://www.sipcapture.org/data/images/qxip.png"></a> <a href="http://ntop.org" target="_blank"><img src="http://www.ntop.org/wp-content/uploads/2011/08/logo_new_m.png"></a> <a href="http://facetflow.com" target="_blank"><img src="http://i.imgur.com/cIvYisr.png"></a>
-
+</center>
