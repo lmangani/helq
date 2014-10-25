@@ -3,7 +3,7 @@
 nprobe-facetflow
 ================
 
-nProbe Integration with FacetFlow - Hosted Elasticsearch-Logstash-Qbana ("HELQ")
+Hosted-Elasticsearch-Logstash-Qbana __("HELQ")__ using [Facetflow](https://facetflow.com/) ES Clusters
 
 
 ## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) Quick Ubuntu/Debian Setup:
@@ -195,11 +195,11 @@ curl -XDELETE 'http://127.0.0.1:19200/my_index/' -u {API_KEY}
 
 * Count & Rotate Logstash indexes in your limited sandbox from CRON (scripts/)
 ```
-curl -XGET "http://localhost:19200/logstash-*/_count" -u {YOUR_API_KEY}: -d '{"query": {"match_all": {} } }' -s
+curl -XGET "http://localhost:19200/nprobe-*/_count" -u {YOUR_API_KEY}: -d '{"query": {"match_all": {} } }' -s
 ```
 
 ```
-curl -XDELETE "http://localhost:19200/logstash-*/" -u {YOUR_API_KEY}:
+curl -XDELETE "http://localhost:19200/nprobe-*/" -u {YOUR_API_KEY}:
 ```
 
 * If you're parsing syslog lines too, make sure your hosts are time/ntp sycronized
