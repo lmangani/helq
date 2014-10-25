@@ -3,7 +3,6 @@
 ================
 Hosted-Elasticsearch-Logstash-Qbana *("HELQ")* for [nProbe v7](www.ntop.org/products/nprobe/) using [Facetflow](https://facetflow.com/)
 
-<br>
 
 ## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) HELQ Setup:
 
