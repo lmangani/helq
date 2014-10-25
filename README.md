@@ -101,18 +101,19 @@ Edit and use the following Logstash configuration in /etc/logstash/conf.d/nprobe
 ```
 input {
   tcp {
-    type => "nProbe"
+    type => "nprobe"
     port => 5656
     codec => json_lines
   }
 }
 
 output {
-  if [type] == "nProbe" { 
+  if [type] == "nprobe" { 
     elasticsearch_http {
-    host => "127.0.0.1"
-    port => 19200
-    user => "{YOUR_API_KEY}"
+      host => "127.0.0.1"
+      port => 19200
+      user => "{YOUR_API_KEY}"
+      index => "nprobe-%{+YYYY.MM.dd}"
     }
   }
 }
