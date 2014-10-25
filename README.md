@@ -1,22 +1,21 @@
-<a href="http://qxip.net" target="_blank"><img src="http://www.sipcapture.org/data/images/qxip.png"></a> <a href="http://ntop.org" target="_blank"><img src="http://www.ntop.org/wp-content/uploads/2011/08/logo_new_m.png"></a>
+<a href="http://ntop.org" target="_blank"><img src="http://www.ntop.org/wp-content/uploads/2011/08/logo_new_m.png"></a>
 
-nprobe-facetflow
+H.E.L.Q.
 ================
-
-Hosted-Elasticsearch-Logstash-Qbana __("HELQ")__ using [Facetflow](https://facetflow.com/) ES Clusters
+Hosted-Elasticsearch-Logstash-Qbana __("HELQ")__ using [Facetflow](https://facetflow.com/)
 
 <br><br>
 
-## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) Quick Ubuntu/Debian Setup:
+## ![](http://www.ntop.org/wp-content/uploads/2011/08/nboxLogo.gif) HELQ Setup:
 
-In this example, we'll be using:
+In this setup guide, we'll be using:
 
-* nprobe: capturing and sending json reports to Logstash on port 5656
+* nprobe: capturing and sending json flow reports to Logstash on port 5656
 * logstash: receiving json logs and forwarding to to local nginx on port 19200
-* qbana: connecting to facetflow w/ user authentication option
+* qbana: connecting to facetflow w/ user authentication option *(local or remote)*
 * nginx: reverse proxying http & authenticating logstash to facetflow using HTTPS
 
-Note: A free or paid account at [Facetflow](https://facetflow.com/) is required.
+*Note: A free or paid account at [Facetflow](https://facetflow.com/) is required.*
 
 <br>
 
@@ -50,7 +49,7 @@ apt-get update
 apt-get install pfring nprobe
 ```
 
-Additional OS download are available at: [http://www.nmon.net/packages/](http://www.nmon.net/packages/)
+*Additional OS download are available at: [http://www.nmon.net/packages/](http://www.nmon.net/packages/)*
 
 
 ### Logstash Setup
@@ -65,7 +64,7 @@ apt-get install nginx
 
 ```
 ### FacetFlow Setup
-Sign up for a free or paid account/package at [FacetFlow.com](http://www.FacetFlow.com) and get your *{API_KEY}* and *{HOST_ID}*
+Sign up for a free or paid account/package at [FacetFlow.com](http://www.FacetFlow.com) and obtain your *{API_KEY}* and *{HOST_ID}*
 ```
 The {API_KEY} will be used to authenticate both QBana users and Logstash output plugin.
 ```
@@ -208,7 +207,10 @@ curl -XDELETE "http://localhost:19200/nprobe-*/" -u {YOUR_API_KEY}:
 
 * If you're parsing syslog lines too, make sure your hosts are time/ntp sycronized
 
-* When using several nProbe instances/plugins, create new entry points with custom "_type" in Logstash
+* When using several nProbe instances/plugins, create new in/out pairs with custom "_type" in Logstash
+
+* In Facetflow, generate custom keys for your agents/applications to improve security
+
 
 ------------
 <br>
